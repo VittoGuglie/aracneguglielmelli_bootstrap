@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.width100{
+    width: 100%;
+}
+header{
+    height: auto;
+    background-image: linear-gradient(to left,rgb(187, 225, 35), #f3c12d, rgb(255, 123, 0), #920707);
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+}
+header ul li a:hover , 
+header ul li a.active
+{
+    background: #ffffff;
+    color:#920707
+}
+footer{
+    background-image: linear-gradient(to bottom, #202ba8, rgb(16, 100, 203));
+}
+footer input{
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+footer input[type="email"]{
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 8px 0 0 8px;
+}
+footer input[type="submit"]{
+    position: relative;
+    border-radius: 0 8px 8px 0;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(0, 76, 255);
+    color: #fff;
+    padding-left: 30px;
+}
+footer input[type="submit"]:hover{
+    background: aqua;
+}
+.bold{
+    font-weight: bold;
+}
+.textVideo{
+    height: 250px;
+    background-color: rgb(251, 191, 88);
+    transition: all 2s linear;
+}
+.textVideo:hover{
+    background-color:#920707;
+    cursor: pointer;
+    color: white;
+}
+.color{
+    color: white;
+}
+.bgPrimario{
+    background: linear-gradient(
+    35deg,
+    rgba(255, 200, 249, 1) 25%,
+    rgba(75, 254, 222, 1) 25%,
+    rgba(75, 254, 222, 1) 71%,
+    rgba(0, 0, 0, 0) 71%,
+    rgba(69, 74, 187, 1) 71%,
+    rgba(69, 74, 187, 1) 100%
+    );
+}
+.highlightblack{
+    background-color: black;
+    color: white;
+}
+section select{
+    font-size: 1.5rem;
+    padding: 16px 24px;
+    background: #3c3939;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 2s ease-in;
+}
+section select:hover{
+    background: black;
+}
+/*Estilos para desktop*/
+@media screen and (min-width: 1024px){
+    ul.navbar-nav{
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .form-control{
+        width: 40%;
+    }
+    .translateY{
+        transition: all 2s ease;
+    }
+    .translateY:hover{
+        cursor: pointer;
+        transform: translateY(-15px);
+    } 
+}
+/*Estilos para mobile*/
+@media screen and (max-width: 768px){
+    .btn{
+        width: 100%;
+    }
+    .form-control{
+        width: 100%;
+    }
+}
